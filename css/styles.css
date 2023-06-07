@@ -41,6 +41,12 @@ body {
 .link {
   text-decoration: none;
 }
+.list {
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
 .nav {
   font-weight: 500;
   font-size: 16px;
@@ -64,18 +70,6 @@ body {
 .address-list-item:active {
   color: var(--pressed-state-color);
 }
-
-.list {
-  list-style: none;
-}
-.address {
-  font-style: normal;
-}
-
-.filters-buttons-list,
-.products-list {
-  list-style-type: none;
-}
 .hero {
   background-color: var(--dark-color);
 }
@@ -95,6 +89,7 @@ body {
   background-color: var(--pressed-state-color);
 }
 .filters-button {
+  font-family: 'Roboto', sans-serif;
   background-color: var(--light-color);
   font-weight: 500;
   font-size: 16px;
@@ -105,11 +100,12 @@ body {
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
+.filters-button:hover,
+.filters-button:focus,
 .filters-button:active {
-  background-color: var(--pressed-state-color);
   color: var(--white-background-color);
+  background-color: var(--pressed-state-color);
 }
-
 .page-title {
   color: var(--white-background-color);
   font-weight: 700;
@@ -134,7 +130,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-color);
 }
-
+.page-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
 .our-team-section {
   background-color: var(--light-color);
 }
@@ -142,11 +149,6 @@ body {
   background-color: var(--white-background-color);
   text-align: center;
 }
-.product-card {
-  background-color: var(--white-background-color);
-  border: 1px solid var(--accent-color);
-}
 .footer {
   background-color: var(--dark-color);
-  color: var(--light-color);
 }
